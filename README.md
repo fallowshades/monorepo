@@ -4,6 +4,14 @@
 
 MonoScript demonstrates a modern, full-stack TypeScript development environment, showcasing a monorepo-based application that integrates TypeScript, Express, and Vite in a contemporary web development stack. The image above provides a visual representation of the project's architecture and key components.
 
+## Live Demo
+
+Check out the live demo of MonoScript:
+
+[MonoScript Live Demo](https://monorepo-typescript-vite-express.onrender.com/)
+
+This link leads to a production deployment of the MonoScript project, showcasing the full functionality of the application in a real-world environment.
+
 ## Project Structure
 
 This project is organized as a monorepo with the following main directories:
