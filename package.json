@@ -1,0 +1,20 @@
+{
+  "name": "monoscript",
+  "version": "1.0.0",
+  "description": "Monorepo with Typescript, Express, Vite, Tailwind, Shadcn",
+  "main": "index.js",
+  "scripts": {
+    "build:shared": "cd shared && npm install && npm run build",
+    "build:client": "cd client && npm install && npm run build",
+    "build:server": "cd server && npm install && npm run build",
+    "deploy": "npm run build:shared && npm run build:client && npm run build:server",
+    "start": "cd server && npm run start",
+    "dev": "concurrently \"npm run dev --prefix shared\"  \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
