@@ -18,8 +18,8 @@ This project is organized as a monorepo with the following main directories:
 - **Vite**: Builds and serves the frontend application
 - **React**: Used for building the user interface
 - **Node.js**: Runtime for the server
-- **TailwindCSS**: Used for styling the frontend application
-- **Shadcn**: Used for styling the frontend application
+- **TailwindCSS**: Utility-first CSS framework for rapid UI development
+- **Shadcn**: Component library built on top of TailwindCSS for consistent and customizable UI elements
 
 ## Getting Started
 
@@ -33,7 +33,8 @@ This project is organized as a monorepo with the following main directories:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/monoscript.git
+   git clone https://github.com/john-smilga/monorepo-typescript-vite-express.git
+
    cd monoscript
    ```
 
@@ -48,21 +49,21 @@ This project is organized as a monorepo with the following main directories:
 
 ### Running the Application
 
-1. Start the backend server:
+1. Install dependencies for all packages:
 
    ```
-   cd server
+   npm install
+   ```
+
+2. Start the development servers (client, server, and shared):
+
+   ```
    npm run dev
    ```
 
-2. In a new terminal, start the frontend development server:
+   This command will concurrently start the client dev server, the server, and run `tsx -w` in the shared package.
 
-   ```
-   cd client
-   npm run dev
-   ```
-
-3. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite)
+3. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite) to view the client application.
 
 ## Development
 
@@ -72,25 +73,21 @@ This project is organized as a monorepo with the following main directories:
 
 ## Building for Production
 
-1. Build the client:
+1. Build the entire project:
 
    ```
-   cd client
-   npm run build
+   npm run deploy
    ```
 
-2. Build the server:
+   This command will build both the client and server applications.
+
+2. Start the production server:
 
    ```
-   cd server
-   npm run build
-   ```
-
-3. Start the production server:
-   ```
-   cd server
    npm start
    ```
+
+   This will start the production server, serving the built client application.
 
 ## Contributing
 
