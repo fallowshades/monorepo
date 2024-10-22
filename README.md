@@ -1,6 +1,8 @@
 # MonoScript: Full-Stack TypeScript Project
 
-MonoScript is a monorepo-based full-stack application that demonstrates the integration of TypeScript, Express, and Vite in a modern web development stack.
+![MonoScript Project Overview](monoscript.png)
+
+MonoScript demonstrates a modern, full-stack TypeScript development environment, showcasing a monorepo-based application that integrates TypeScript, Express, and Vite in a contemporary web development stack. The image above provides a visual representation of the project's architecture and key components.
 
 ## Project Structure
 
@@ -21,41 +23,22 @@ This project is organized as a monorepo with the following main directories:
 - **TailwindCSS**: Utility-first CSS framework for rapid UI development
 - **Shadcn**: Component library built on top of TailwindCSS for consistent and customizable UI elements
 
-## Getting Started
+### Installation and Running the Application
 
-### Prerequisites
-
-- Node.js (version 14 or later recommended)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
+1. Clone the repository and navigate to the project directory:
 
    ```
    git clone https://github.com/john-smilga/monorepo-typescript-vite-express.git
-
    cd monoscript
    ```
 
 2. Install dependencies for all packages:
-   ```
-   npm install
-   ```
-   or if using yarn:
-   ```
-   yarn install
-   ```
-
-### Running the Application
-
-1. Install dependencies for all packages:
 
    ```
    npm install
    ```
 
-2. Start the development servers (client, server, and shared):
+3. Start the development servers (client, server, and shared):
 
    ```
    npm run dev
@@ -63,7 +46,7 @@ This project is organized as a monorepo with the following main directories:
 
    This command will concurrently start the client dev server, the server, and run `tsx -w` in the shared package.
 
-3. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite) to view the client application.
+4. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite) to view the client application.
 
 ## Development
 
