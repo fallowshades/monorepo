@@ -4,7 +4,7 @@
   "description": "Monorepo with Typescript, Express, Vite, Tailwind, Shadcn",
   "main": "index.js",
   "scripts": {
-    "install": "npm install && cd shared && npm install && cd ../client && npm install && cd ../server && npm install",
+    "install:all": "npm install && cd shared && npm install && cd ../client && npm install && cd ../server && npm install",
     "build:shared": "cd shared && npm install && npm run build",
     "build:client": "cd client && npm install && npm run build",
     "build:server": "cd server && npm install && npm run build",

@@ -43,7 +43,7 @@ This project is organized as a monorepo with the following main directories:
 2. Install dependencies for all packages:
 
    ```
-   npm install
+   npm run install:all
    ```
 
 3. Start the development servers (client, server, and shared):
