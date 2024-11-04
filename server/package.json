@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npx tsc -b",
     "seed": "npx ts-node seeder/seeder.ts",
-    "dev": "nodemon app.ts",
+    "dev": "NODE_OPTIONS='--loader ts-node/esm' nodemon app.ts",
     "start": "node dist/app.js"
   },
   "keywords": [],

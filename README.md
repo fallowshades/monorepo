@@ -87,3 +87,29 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+####
+
+package.json
+
+```json
+    "dev": "NODE_OPTIONS='--loader ts-node/esm' nodemon app.ts",
+```
+
+tsconfig.json
+
+```json
+ "target": "ESNext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+     "module": "ESNext" /* Specify what module code is generated. */
+       },
+  "include": ["src/**/*"],
+```
+
+shared\tsconfig.json
+
+```json
+  "ts-node": {
+    // Tell ts-node CLI to install the --loader automatically, explained below
+    "esm": true
+  },
+```
